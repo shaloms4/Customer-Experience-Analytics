@@ -31,7 +31,7 @@ This project collects and preprocesses customer reviews from the Google Play Sto
 ## Setup Instructions
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/shaloms4/Customer-Experience-Analytics
    cd Customer-Experience-Analytics
    ```
 2. **Create a virtual environment and activate it:**
