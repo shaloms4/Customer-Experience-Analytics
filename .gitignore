@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+
+# CSV data files (if you want to exclude raw data from git)
+data/
+
+# Python egg metadata
+*.egg-info/
+dist/
+build/
+
+# VS Code settings (optional)
+.vscode/
+
+# MacOS system files (optional)
+.DS_Store
