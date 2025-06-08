@@ -8,7 +8,7 @@ import logging
 logging.basicConfig(filename='scraper.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Directory to save data
-os.makedirs("data", exist_ok=True)
+os.makedirs("data/raw", exist_ok=True)
 
 # Bank apps with Play Store IDs
 apps = {
@@ -33,7 +33,7 @@ def scrape_reviews_for_all_banks():
 
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             safe_name = bank_name.lower().replace(" ", "_")
-            filename = f"data/{safe_name}_reviews_{timestamp}.csv"
+            filename = f"data/raw/{safe_name}_reviews_{timestamp}.csv"
 
             with open(filename, mode='w', newline='', encoding='utf-8') as file:
                 writer = csv.DictWriter(file, fieldnames=['review_text', 'rating', 'date', 'bank_name', 'source'])
